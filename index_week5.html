@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather forecast</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      h1,
+      h2 {
+        color: #885df1;
+      }
+      h2 {
+        font-size: calc(1.375rem + 1.5vw);
+      }
+      .units {
+        font-size: 17px;
+        position: relative;
+        top: -22px;
+        font-weight: 440;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        font-size: 20px;
+        padding-top: 6px;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form class="search-form" id="search-form">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                id="search-text-input"
+                placeholder="Enter a city or country"
+                aria-label="Recipient's username with two button addons"
+              />
+              <button class="btn btn-primary" type="submit" value="Search">
+                Search
+              </button>
+              <button class="btn btn-success" type="button">Reset</button>
+              <button class="btn btn-secondary" type="button">Current</button>
+            </div>
+            <br />
+            <div class="container px-4">
+              <div class="row gx-5">
+                <div class="col-8">
+                  <h1 class="city">Current city's name</h1>
+                </div>
+                <div class="col-4">
+                  <h2>
+                    <span class="temperature">Current temperature </span>
+                  </h2>
+                </div>
+                <div class="col-8">
+                  <h3>Current datetime</h3>
+                </div>
+                <div class="col-4" id="emodji">
+                  <h3>
+                    <ul>
+                      <li id="description">Clouds</li>
+                      <li>Humidity: <span id="humidity">?</span> %</li>
+                      <li>Wind: <span id="wind">?</span> km/h</li>
+                    </ul>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </form>
+          <br />
+          <div class="container">
+            <div class="card-group">
+              <div class="card">
+                <div class="card border-info mb" style="max-width: 18rem">
+                  <div class="card-header">Day of week</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <p class="card-text">Temperature</p>
+                    <img src="#" class="card-img-top" alt="#" />
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card border-info mb" style="max-width: 18rem">
+                  <div class="card-header">Day of week</div>
+                  <div class="card-body">
+                    <h5 class="card-titl">Date</h5>
+                    <p class="card-text">Temperature</p>
+                    <img src="#" class="card-img-top" alt="#" />
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card border-info mb" style="max-width: 18rem">
+                  <div class="card-header">Day of week</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <p class="card-text">Temperature</p>
+                    <img src="#" class="card-img-top" alt="#" />
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card border-info mb" style="max-width: 18rem">
+                  <div class="card-header">Day of week</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <p class="card-text">Temperature</p>
+                    <img src="#" class="card-img-top" alt="#" />
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card border-info mb" style="max-width: 18rem">
+                  <div class="card-header">Day of week</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <p class="card-text">Temperature</p>
+                    <img src="#" class="card-img-top" alt="#" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/week5.js"></script>
+  </body>
+</html>
